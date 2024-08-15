@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: calc(1em + 0.5rem);
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+p {
+    width: clamp(45ch, 50%, 75ch);
+}
+
+/* /////////////  Main  ///////////*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: #f9fafb;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ////////////////////  Part-1  ///////////////////*/
+
+
+.sidebar{
+    background-image: url("./assets/lexi-laginess-XYfjIT9c01Q-unsplash.jpg");
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.odin{
+    width: 35vw;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+.odin img {
+    height: 100px;
+    display: inline;
+}
+
+.odin span {
+    font-size: calc(3rem + 1.5vw);
+    text-align: center;
+    color: white;
+}
+
+.sidebar p,
+.sidebar a {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+/* //////////////  Part-2  ////////////*/
+
+.content{
+    width: 60%;
+    align-self: center;
+}
+
+.intro{
+    padding: 2rem;
+    font-weight: 400;
+    font-size: calc(1rem + 0.2vw);
+    line-height: 1.5;
+}
+
+.intro p:last-of-type {
+    margin: 10px 0px;
+}
+
+.input-area {
+    background-color: white;
+    box-shadow: 0px 4px 2px #dcdddd;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: calc(10px + 0.3vw);
+}
+
+.input-area>h2 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form button {
+    margin: 0rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 10px 40px;
+    font-size: calc(10px + 0.3vw);
+    font-weight: bold;
+    background-color: #596d48;
+    color: white;
+    box-shadow: 0px 4px 2px #dcdddd;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content>p:last-of-type {
+    margin-left: 2rem;
+}
+
+.content>p>a {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-row {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.form-row{
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.form-row label{
+display: block;
+margin-bottom: 5px;
+}
+
+.form-row input{
+    width: 80%;
+    padding: 5px 7px;
+    border: 1px solid #020911;
+    border-radius: 5px;
+}
+.form-row input:focus{
+   outline-color: blue;
+}
+.form-row input:invalid{
+  outline-color: red;
+}
